@@ -1,0 +1,5 @@
+docker-compose build : construit les images
+docker-compose up -d --force-recreate : mets les service en service
+docker-compose stop : stop les containers
+docker-compose rm -f : supprime les containers, le -f sert s'affranchir du besoin de répondre "oui"
+docker-compose logs -f : affiche les logs en continue, le -f sert à afficher les logs en continue

@@ -1,0 +1,13 @@
+docker image ls : liste les images
+docker container ls : liste les containers
+docker build -t azeaze . : construit une image au nom "azeaze" à partir du Dockerfile situé au répertoire de travail . (par rapport au repertoire du terminal ou la commande est executée)
+docker run azeaze : crée un container à partir de l'image azeaze
+docker run -it azeaze bash (ou docker run -it azeaze sh): crée un container à partir de l'image azeaze et nous donne la main sur un terminal dans le container
+docker run -p1234:5000 azeaze : crée un container et map le port 5000 du container au port 1234 de la machine hote
+docker --help : enumère les commandes et options
+docker run --help : énumère les commandes et options liées au run
+docker stop azeaze : éteint un container
+docker rm azeaze : supprimer un container
+docker image rm azeaze : supprimer une image
+docker logs azeaze -f : affiche les logs, le "-f" permet d'afficher en continue, d'afficher les logs qui sont à venir
+docker pull azeaze : tire un image du dockerhub
